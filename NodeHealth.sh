@@ -24,3 +24,7 @@ set -x #debug mode
 df -h
 free -g
 nproc
+
+ps -ef
+ps -ef | grep "amazon" 
+ps -ef | grep "amazon" | awk -F " " '{print $2}'
